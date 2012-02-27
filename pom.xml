@@ -21,6 +21,8 @@
 		<selenium.java.version>2.19.0</selenium.java.version>
 		<servlet.api.version>2.5</servlet.api.version>
 		<jetty.all.version>7.5.4.v20111024</jetty.all.version>
+		<primefaces.version>3.1.1</primefaces.version>
+		<primefaces.mobile.version>0.9.1</primefaces.mobile.version>
     </properties>
 	
 	<modules>
@@ -29,6 +31,15 @@
 		<module>chanom-service</module>
 		<module>chanom-web</module>
 	</modules>
+	
+	<repositories>
+		<repository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
 	
 	<dependencyManagement>
 		<dependencies>
@@ -101,6 +112,16 @@
 	            <artifactId>jetty-all</artifactId>
 	            <version>${jetty.all.version}</version>
 	        </dependency>
+			<dependency>
+				<groupId>org.primefaces</groupId>
+				<artifactId>primefaces</artifactId>
+				<version>${primefaces.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.primefaces</groupId>
+				<artifactId>mobile</artifactId>
+				<version>${primefaces.mobile.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
