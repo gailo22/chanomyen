@@ -20,7 +20,7 @@ public class JettyServerProvider {
 		server.addConnector(connector);
 
 		WebAppContext webAppContext = new AliasEnhancedWebAppContext();
-		webAppContext.setContextPath("/chanom");
+		webAppContext.setContextPath("/chanom-web");
 		webAppContext.setBaseResource(new ResourceCollection(new String[] {
 				"./src/main/webapp", "./target" }));
 		webAppContext.setResourceAlias("/WEB-INF/classes/", "/classes/");

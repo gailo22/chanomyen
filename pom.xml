@@ -24,8 +24,14 @@
 		<primefaces.version>3.1.1</primefaces.version>
 		<primefaces.mobile.version>0.9.1</primefaces.mobile.version>
 		<javax.faces.api.version>2.1</javax.faces.api.version>
-		<javaee.api.version>5</javaee.api.version>
+		<javaee.api.version>6.0</javaee.api.version>
+		<javaee.web.api.version>6.0</javaee.web.api.version>
 		<javax.faces.impl.version>2.1.7</javax.faces.impl.version>
+		<jsf.api.version>2.1.2</jsf.api.version>
+		<jsf.impl.version>2.1.2</jsf.impl.version>
+		<el.api.version>2.2</el.api.version>
+		<el.impl.version>2.2</el.impl.version>
+		<jstl.version>1.2</jstl.version>
     </properties>
 	
 	<modules>
@@ -41,6 +47,11 @@
 			<name>PrimeFaces Maven Repository</name>
 			<url>http://repository.primefaces.org</url>
 			<layout>default</layout>
+		</repository>
+		<repository>
+		  <id>jvnet-nexus-releases</id>
+		  <name>jvnet-nexus-releases</name>
+		  <url>https://maven.java.net/content/repositories/releases/</url>
 		</repository>
 	</repositories>
 	
@@ -131,14 +142,44 @@
 			    <version>${javax.faces.api.version}</version>
 			</dependency>
 			<dependency>
-			  <groupId>javaee</groupId>
+			  <groupId>javax</groupId>
 			  <artifactId>javaee-api</artifactId>
 			  <version>${javaee.api.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-web-api</artifactId>
+				<version>${javaee.web.api.version}</version>
+			 </dependency>
+			<dependency>
 			  <groupId>org.glassfish</groupId>
 			  <artifactId>javax.faces</artifactId>
 			  <version>${javax.faces.impl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.faces</groupId>
+				<artifactId>jsf-api</artifactId>
+				<version>${jsf.api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.faces</groupId>
+				<artifactId>jsf-impl</artifactId>
+				<version>${jsf.impl.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>javax.el</groupId>
+			    <artifactId>el-api</artifactId>
+			    <version>${el.api.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.glassfish.web</groupId>
+			    <artifactId>el-impl</artifactId>
+			    <version>${el.impl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+				<version>${jstl.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
