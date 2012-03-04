@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<link type="text/css" rel="stylesheet" href="themes/bluesky/skin.css" />
+</h:head>
+<h:body>
+	<f:loadBundle basename="com.gailo22.chanom.messages" var="msg" />
+	<div class="header">
+		<ui:include src="/views/header.xhtml"/>
+	</div>
+	<div class="content">
+		<ui:insert name="body">Default Body</ui:insert>
+	</div>
+	<div class="footer">
+		<ui:include src="/views/footer.xhtml"/>
+	</div>
+</h:body>
+
+</html>

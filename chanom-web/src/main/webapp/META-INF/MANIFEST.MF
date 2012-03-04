@@ -11,16 +11,6 @@ Class-Path: chanom-service-1.0-SNAPSHOT.jar chanom-repository-1.0-SNAP
  15.0-GA.jar hibernate-commons-annotations-4.0.1.Final.jar mockito-cor
  e-1.8.5.jar hamcrest-core-1.1.jar objenesis-1.0.jar guava-10.0.1.jar 
  jsr305-1.3.9.jar spring-web-3.1.1.RELEASE.jar spring-webmvc-3.1.1.REL
- EASE.jar spring-context-support-3.1.1.RELEASE.jar selenium-java-2.19.
- 0.jar selenium-android-driver-2.19.0.jar selenium-remote-driver-2.19.
- 0.jar cglib-nodep-2.1_3.jar json-20080701.jar selenium-api-2.19.0.jar
-  httpclient-4.1.2.jar httpcore-4.1.2.jar commons-codec-1.4.jar common
- s-exec-1.1.jar jna-3.4.0.jar platform-3.4.0.jar selenium-chrome-drive
- r-2.19.0.jar selenium-htmlunit-driver-2.19.0.jar htmlunit-2.9.jar xal
- an-2.7.1.jar serializer-2.7.1.jar commons-lang-2.6.jar httpmime-4.1.2
- .jar htmlunit-core-js-2.9.jar xercesImpl-2.9.1.jar nekohtml-1.9.15.ja
- r cssparser-0.9.5.jar sac-1.3.jar commons-io-2.0.1.jar selenium-firef
- ox-driver-2.19.0.jar selenium-ie-driver-2.19.0.jar selenium-iphone-dr
- iver-2.19.0.jar selenium-support-2.19.0.jar primefaces-3.1.1.jar jsf-
- api-2.1.2.jar jsf-impl-2.1.2.jar jstl-1.2.jar
+ EASE.jar spring-context-support-3.1.1.RELEASE.jar primefaces-3.1.1.ja
+ r jsf-api-2.1.2.jar jsf-impl-2.1.2.jar jstl-1.2.jar
 

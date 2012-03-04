@@ -1,15 +1,78 @@
 <html xmlns="http://www.w3c.org/1999/xhtml"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
-<h:head>
-	<link type="text/css" rel="stylesheet" href="themes/bluesky/skin.css" />
-</h:head>
-<h:body>
-	<f:loadBundle basename="com.gailo22.chanom.messages" var="msg"/>
-	<h:form>
-		<p>#{helloWorld.text} : #{msg['hello']}</p>
-		<p:spinner />
-	</h:form>
-</h:body>
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/templates/login-template.xhtml">
+
+	<ui:define name="body">
+		<h:form>
+			<p>Welcome to Chanom Cafe</p>
+
+			<p:tabView id="tabView" orientation="top">
+
+				<p:tab id="tab1" title="Favored Tea">
+					<h:panelGrid columns="2" cellpadding="10">
+						<h:outputText id="f_tea1" value="Jasmine Green Tea" />
+						<h:outputText id="f_tea2" value="Assam Black Tea" />
+						<h:outputText id="f_tea3" value="Plum Green Tea" />
+						<h:outputText id="f_tea4" value="Ice Cream Tea" />
+						<h:outputText id="f_tea5" value="Honey Green Tea" />
+						<h:outputText id="f_tea6" value="Passion Fruit Gree Tea" />
+						<h:outputText id="f_tea7" value="Lime Green Tea" />
+						<h:outputText id="f_tea8" value="Peach Green Tea" />
+						<h:outputText id="f_tea9" value="Yakult Green Tea" />
+					</h:panelGrid>
+				</p:tab>
+				
+				<p:tab id="tab2" title="Coffee">
+					<h:panelGrid columns="2" cellpadding="10">
+						<h:outputText id="coffee1" value="Black Coffee" />
+						<h:outputText id="coffee2" value="Chanom Yen" />
+						<h:outputText id="coffee3" value="Cafe Latte" />
+						<h:outputText id="coffee4" value="Cappuccino" />
+						<h:outputText id="coffee5" value="Cafe Mocha" />
+						<h:outputText id="coffee6" value="Caramel Macchiato" />
+					</h:panelGrid>
+				</p:tab>
+
+				<p:tab id="tab3" title="Milk Tea">
+					<h:panelGrid columns="2" cellpadding="10">
+						<h:outputText id="m_tea1" value="Green Tea Macchiato" />
+						<h:outputText id="m_tea2" value="Black Tea Macchiato" />
+						<h:outputText id="m_tea3" value="Milk Tea" />
+						<h:outputText id="m_tea4" value="Hazelnut Milk Tea" />
+						<h:outputText id="m_tea5" value="Caramel Milk Tea" />
+						<h:outputText id="m_tea6" value="Vanilla Milk Tea" />
+						<h:outputText id="m_tea7" value="Honey Milk Tea" />
+						<h:outputText id="m_tea8" value="Chocolate Milk Tea" />
+						<h:outputText id="m_tea9" value="Ovaltine" />
+						<h:outputText id="m_tea10" value="Fresh Milk Tea" />
+					</h:panelGrid>
+				</p:tab>
+
+				<p:tab id="tab4" title="Chewy Tea">
+					<h:panelGrid columns="2" cellpadding="10">
+						<h:outputText id="c_tea1" value="Bubble Green Tea" />
+						<h:outputText id="c_tea2" value="Bubble Black Tea" />
+						<h:outputText id="c_tea3" value="Bubble Milk Tea" />
+						<h:outputText id="c_tea4" value="Bubble Green Milk Tea" />
+						<h:outputText id="c_tea5" value="Coconut Jelly Milk Tea" />
+						<h:outputText id="c_tea6" value="Grass Jelly Milk Tea" />
+						<h:outputText id="c_tea7" value="Passion Frut AI-YU" />
+						<h:outputText id="c_tea8" value="AI-YU Ice Tea" />
+						<h:outputText id="c_tea9" value="Aloe Vera Passion Green Tea" />
+						<h:outputText id="c_tea10" value="Bubble Fresh Milk Tea" />
+					</h:panelGrid>
+				</p:tab>
+
+			</p:tabView>
+
+		</h:form>
+	</ui:define>
+
+</ui:composition>
+
+
 </html>
