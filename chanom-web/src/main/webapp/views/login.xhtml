@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/templates/login-template.xhtml">
+
+	<ui:define name="body">
+		<h:form>
+			<p:panel header="Login">
+				<h:panelGrid columns="2" columnClasses="column" cellpadding="5">
+					<h:outputText value="Username : " />
+					<p:inputText value="" />
+					<h:outputText value="Password : " />
+					<p:password value="" /> 
+					<h:outputText value="" />
+					<p:button value="Submit" />
+				</h:panelGrid>
+			</p:panel>
+		</h:form>
+	</ui:define>
+
+</ui:composition>
+
+
+</html>

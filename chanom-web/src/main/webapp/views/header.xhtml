@@ -6,10 +6,12 @@
 
 <div style="height: 50px; background-color: green; color: white;">
 	<span
-		style="font-size: 20px; top: 50%; line-height: 50px; padding-left: 20px;">
+		style="font-size: 20px; top: 50%; line-height: 50px; padding-left: 20px; cursor:pointer;" onclick="window.location='/chanom-web'">
 		Chanom YEN Cafe'</span>
 	<div style="float: right;padding: 10px;">
-		<span><a href="#" style="color: white;">Login</a></span> <span> | <a href="#" style="color: white;">Signup</a></span>
+		<span><a href="/chanom-web/views/login.jsf" style="color: white;">Login</a></span> 
+		<h:outputText value=" | " />
+		<span><a href="/chanom-web/views/signup.jsf" style="color: white;">Signup</a></span>
 	</div>
 </div>
 
