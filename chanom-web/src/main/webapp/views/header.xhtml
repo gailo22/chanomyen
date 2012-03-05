@@ -4,15 +4,19 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 
-<div style="height: 50px; background-color: green; color: white;">
-	<span
-		style="font-size: 20px; top: 50%; line-height: 50px; padding-left: 20px; cursor:pointer;" onclick="window.location='/chanom-web'">
-		Chanom YEN Cafe'</span>
-	<div style="float: right;padding: 10px;">
-		<span><a href="/chanom-web/views/login.jsf" style="color: white;">Login</a></span> 
-		<h:outputText value=" | " />
-		<span><a href="/chanom-web/views/signup.jsf" style="color: white;">Signup</a></span>
+	<div class="header-container">
+		<a href="/chanom-web" id="chanomyen">Chanom YEN Cafe'</a>
+	
+		<ul id="navigation">
+			<li><a href="/chanom-web/views/login.jsf" class="nav login-nav">Login</a></li>
+			<li><a href="/chanom-web/views/signup.jsf" class="nav singup-nav">Signup</a></li>
+			<li><a href="/chanom-web/about/" class="nav">About<span></span></a>
+				<ul class="about-sub-menu">
+					<li><a href="/chanom-web/about/help/">Help</a></li>
+					<li><a href="/chanom-web/about/team/">Team</a></li>
+				</ul>
+			</li>
+		</ul>
 	</div>
-</div>
 
 </html>
